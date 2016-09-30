@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.usfirst.frc.team5265.robot.Robot"/>
+<fullyQualifiedTypeName name="com.ni.vision.NIVision.IMAQdxCameraInformation"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.PIDSubsystem"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.livewindow.LiveWindow"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.SpeedController"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Robot01.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Robot01.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.autoRobot.RobotMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Phoenix.commands.driveByTime"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SendableChooser"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Phoenix.subsystems.StagArm"/>
+<fullyQualifiedTypeName name="java.io.Console"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Phoenix.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Phoenix.RobotMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon.FeedbackDevice"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon.MotionProfileStatus"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon.SetValueMotionProfile"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon.TrajectoryPoint"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon.FeedbackDeviceStatus"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon.StatusFrameRate"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Phoenix.subsystems.StagIntake"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Phoenix.subsystems.StagBase"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.Phoenix.subsystems.StagValues"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
+<fullyQualifiedTypeName name="java.awt.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc5265.applePicker.RobotMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon.TalonControlMode"/>
+</qualifiedTypeNameHistroy>

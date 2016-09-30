@@ -1,0 +1,8 @@
+PROBLEMS_FILTERS_MIGRATE=true
+SAVE_ALL_BEFORE_BUILD=true
+SHOW_LOCATION=true
+TASKS_FILTERS_MIGRATE=true
+eclipse.preferences.version=1
+platformState=1454298091431
+quickStart=false
+tipsAndTricks=true

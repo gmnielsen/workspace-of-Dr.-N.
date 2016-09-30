@@ -1,0 +1,222 @@
+Version 2.0
+
+---
+Children:
+- Children:
+  - Children:
+    - Children: []
+      Properties:
+        CAN ID: !!robotbuilder.data.properties.ChoicesProperty
+          choices: &id001 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+          default: '2'
+          name: CAN ID
+          validators: &id002 [CANID]
+          value: '0'
+      Base: CAN Talon
+      Name: jakefrontright
+    - Children: []
+      Properties:
+        CAN ID: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id001
+          default: '2'
+          name: CAN ID
+          validators: *id002
+          value: '1'
+      Base: CAN Talon
+      Name: jakerearright
+    - Children: []
+      Properties:
+        CAN ID: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id001
+          default: '2'
+          name: CAN ID
+          validators: *id002
+          value: '2'
+      Base: CAN Talon
+      Name: jakefrontleft
+    - Children: []
+      Properties:
+        CAN ID: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id001
+          default: '2'
+          name: CAN ID
+          validators: *id002
+          value: '3'
+      Base: CAN Talon
+      Name: jakerearleft
+    Properties:
+      Default command parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Default command parameters
+        validators: null
+        value: []
+      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Default Command, type: Command, validators: null, value: None}
+      Constants: !!robotbuilder.data.properties.ConstantsProperty
+        default: []
+        name: Constants
+        validators: null
+        value: []
+    Base: Subsystem
+    Name: jakeBase
+  Properties: {}
+  Base: Subsystems
+  Name: Subsystems
+- Children: []
+  Properties: {}
+  Base: OI
+  Name: Operator Interface
+- Children:
+  - Children: []
+    Properties:
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id003 []
+        name: Parameter presets
+        validators: null
+        value: *id003
+      Commands: !!robotbuilder.data.properties.ListProperty
+        default: &id006
+        - !!robotbuilder.data.CommandGroupEntry
+          command:
+            base: &id008
+              help: A command specifies an action that the robot can perform.
+              name: Command
+              properties:
+              - !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+                name: Requires, type: Subsystem, validators: null, value: None}
+              - !!robotbuilder.data.properties.BooleanProperty {default: true, name: Button on SmartDashboard,
+                validators: null, value: true}
+              - !!robotbuilder.data.properties.ParametersProperty
+                default: []
+                name: Parameters
+                validators: null
+                value: []
+              - !!robotbuilder.data.properties.ParameterSetProperty
+                default: &id004 []
+                name: Parameter presets
+                validators: null
+                value: *id004
+              supports: {}
+              type: Command
+            name: rightSide
+            properties: &id013
+              Parameters: !!robotbuilder.data.properties.ParametersProperty
+                default: []
+                name: Parameters
+                validators: null
+                value: []
+              Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+                name: Requires, type: Subsystem, validators: null, value: jakeBase}
+              Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+                default: &id005 []
+                name: Parameter presets
+                validators: null
+                value: *id005
+              Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {
+                default: true, name: Button on SmartDashboard, validators: null, value: true}
+          hasMatch: true
+          order: Sequential
+          parameters:
+            default: []
+            name: ParametersProperty
+            validators: null
+            value: []
+          previous: null
+        name: Commands
+        validators: &id010 [List]
+        value: *id006
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command Group
+    Name: Go_Forwardright
+  - Children: []
+    Properties:
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id007 []
+        name: Parameter presets
+        validators: null
+        value: *id007
+      Commands: !!robotbuilder.data.properties.ListProperty
+        default: &id011
+        - !!robotbuilder.data.CommandGroupEntry
+          command:
+            base: *id008
+            name: leftSide
+            properties: &id012
+              Parameters: !!robotbuilder.data.properties.ParametersProperty
+                default: []
+                name: Parameters
+                validators: null
+                value: []
+              Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+                name: Requires, type: Subsystem, validators: null, value: jakeBase}
+              Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+                default: &id009 []
+                name: Parameter presets
+                validators: null
+                value: *id009
+              Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {
+                default: true, name: Button on SmartDashboard, validators: null, value: true}
+          hasMatch: true
+          order: Sequential
+          parameters:
+            default: []
+            name: ParametersProperty
+            validators: null
+            value: []
+          previous: null
+        name: Commands
+        validators: *id010
+        value: *id011
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command Group
+    Name: Go_Forwardleft
+  - Children: []
+    Properties: *id012
+    Base: Command
+    Name: leftSide
+  - Children: []
+    Properties: *id013
+    Base: Command
+    Name: rightSide
+  Properties: {}
+  Base: Commands
+  Name: Commands
+Properties:
+  Eclipse Workspace: !!robotbuilder.data.properties.FileProperty {default: /Users/nielsen/workspace,
+    extension: null, folder: true, name: Eclipse Workspace, validators: null, value: /Users/nielsen/Documents/programming/workspace}
+  Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Export Commands, validators: null, value: true}
+  Autonomous command parameters: !!robotbuilder.data.properties.ParametersProperty
+    default: []
+    name: Autonomous command parameters
+    validators: null
+    value: []
+  Java Package: !!robotbuilder.data.properties.StringProperty {default: org.usfirst.frc0000,
+    name: Java Package, validators: null, value: org.usfirst.frc5265}
+  Use Default Java Package: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Use Default Java Package, validators: null, value: true}
+  Team Number: !!robotbuilder.data.properties.IntegerProperty {default: 0, name: Team Number,
+    validators: null, value: 5265}
+  Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Export Subsystems, validators: null, value: true}
+  Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
+    name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: /Users/nielsen/,
+    extension: null, folder: true, name: Wiring file location, validators: null, value: /Users/nielsen/}
+  Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+    name: Autonomous Command, type: Command, validators: null, value: Go Forward}
+Base: Robot
+Name: applePicker

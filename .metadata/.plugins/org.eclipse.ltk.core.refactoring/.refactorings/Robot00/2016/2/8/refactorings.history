@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;GoArcade.java&apos; to &apos;GearsBot2/src/org.usfirst.frc.team5265.robot.commands&apos;&#x0A;- Original project: &apos;Robot00&apos;&#x0A;- Destination element: &apos;GearsBot2/src/org.usfirst.frc.team5265.robot.commands&apos;&#x0A;- Original element: &apos;org.usfirst.frc5265.Robot00.commands.GoArcade.java&apos;" description="Copy compilation unit" destination="=GearsBot2/src&lt;org.usfirst.frc.team5265.robot.commands" element1="/src&lt;org.usfirst.frc5265.Robot00.commands{GoArcade.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1455735485437" units="1" version="1.0"/>
+</session>
